@@ -14,7 +14,7 @@ function Form() {
 
     const loadEmployees = () => {
 
-        fetch("http://localhost:5000/employees")
+       fetch("https://pback-zuok.onrender.com/employees")
             .then(response => response.json())
             .then(data => {
                 setEmployees(data);
@@ -35,7 +35,7 @@ function Form() {
             salary: salary
         };
 
-        fetch("http://localhost:5000/employees", {
+        fetch("https://pback-zuok.onrender.com/employees", {
 
             method: "POST",
 

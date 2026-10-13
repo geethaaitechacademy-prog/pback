@@ -8,7 +8,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/employees")
+        fetch("https://pback-zuok.onrender.com/employees")
             .then(response => response.json())
             .then(data => {
                 setEmployees(data);
